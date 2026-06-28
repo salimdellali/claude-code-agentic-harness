@@ -26,7 +26,7 @@ export async function GET(
     color: { dark: '#202020', light: '#ffffff' },
   })
 
-  return new Response(buffer, {
+  return new Response(new Uint8Array(buffer), {
     headers: {
       'Content-Type': 'image/png',
       'Content-Disposition': `attachment; filename="${link.slug}-qr.png"`,
