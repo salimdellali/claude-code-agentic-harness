@@ -1,4 +1,4 @@
-# STATE.md — LinkTo Build State
+# STATE.md — LinkGoes Build State
 
 Track symbol legend: `[ ]` TODO · `[~]` In Progress · `[x]` Done · `[!]` Blocked
 
@@ -105,4 +105,4 @@ Agents: only update your own rows. Read this file before starting any task.
 
 - [x] N1: `.github/workflows/ci.yml` — triggers on PR to `staging` and `prod`: pnpm install → tsc → eslint → vitest
 - [x] N2: `.github/workflows/e2e.yml` — triggers on merge to `staging`: Playwright E2E
-- [x] N3: `vercel.json` or project config — `staging` branch → Vercel preview, `prod` branch → `linkto.vercel.app`
+- [x] N3: `vercel.json` or project config — `staging` branch → Vercel preview, `prod` branch → `linkgoes.vercel.app`

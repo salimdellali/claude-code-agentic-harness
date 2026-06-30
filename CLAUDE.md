@@ -1,4 +1,4 @@
-# CLAUDE.md — LinkTo Agent Contract
+# CLAUDE.md — LinkGoes Agent Contract
 
 Every agent must read this file before touching any code, then read STATE.md to check task status.
 
@@ -6,7 +6,7 @@ Every agent must read this file before touching any code, then read STATE.md to 
 
 ## Project Summary
 
-LinkTo is a personal URL shortener with click analytics. Users create short human-readable links (e.g. `linkto.vercel.app/fast-cloud`), track clicks with referrer/country/device data, organize links with tags, and download QR codes. Built as a Next.js 15 monolith deployed on Vercel Hobby.
+LinkGoes is a personal URL shortener with click analytics. Users create short human-readable links (e.g. `linkgoes.vercel.app/fast-cloud`), track clicks with referrer/country/device data, organize links with tags, and download QR codes. Built as a Next.js 15 monolith deployed on Vercel Hobby.
 
 ---
 
@@ -165,7 +165,7 @@ export async function POST(req: Request) {
 
 ## UI Conventions
 
-Follow `DESIGN.md` — specifically the `## LinkTo Component Map` section. Quick reference:
+Follow `DESIGN.md` — specifically the `## LinkGoes Component Map` section. Quick reference:
 
 | Token | Value | Tailwind class |
 |---|---|---|

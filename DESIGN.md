@@ -384,7 +384,7 @@ The combination of NB International Pro's geometric grotesque character with agg
 }
 ```
 
-## LinkTo Component Map
+## LinkGoes Component Map
 
 Maps design tokens to LinkVault's specific UI components. All agents building UI must follow these patterns.
 

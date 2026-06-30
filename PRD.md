@@ -1,8 +1,8 @@
-# PRD: LinkTo — Personal URL Shortener with Analytics
+# PRD: LinkGoes — Personal URL Shortener with Analytics
 
 ## Overview
 
-A personal URL shortener with click analytics, built as a Next.js 15 monolith on Vercel Hobby. Users create short human-readable links (e.g. `linkto.vercel.app/fast-cloud`), track clicks with referrer/country/device data, organize links with tags, and download QR codes. Stack: DrizzleORM + Neon PostgreSQL, Clerk auth, Tailwind + shadcn/ui, Recharts, PostHog, Vitest + Playwright. Package manager: pnpm.
+A personal URL shortener with click analytics, built as a Next.js 15 monolith on Vercel Hobby. Users create short human-readable links (e.g. `linkgoes.vercel.app/fast-cloud`), track clicks with referrer/country/device data, organize links with tags, and download QR codes. Stack: DrizzleORM + Neon PostgreSQL, Clerk auth, Tailwind + shadcn/ui, Recharts, PostHog, Vitest + Playwright. Package manager: pnpm.
 
 > **Before starting agents:** complete the blocking steps in `SETUP.md` (pnpm, Neon, Clerk, `.env.local`).
 > **Agent contract:** read `CLAUDE.md` first, then `STATE.md` to check task status before writing any code.
@@ -20,7 +20,7 @@ A personal URL shortener with click analytics, built as a Next.js 15 monolith on
 
 ## Design
 
-All UI agents must follow `DESIGN.md` — a monochrome engineering aesthetic with a single violet accent (`#5757f8`). Key rules: `#f5f5f5` canvas, `#ffffff` cards, `1px #202020` borders (no shadows), `8px` radius on all components. The `## LinkTo Component Map` section in `DESIGN.md` maps design tokens directly to this app's specific components (sidebar, stat cards, link table, charts, forms).
+All UI agents must follow `DESIGN.md` — a monochrome engineering aesthetic with a single violet accent (`#5757f8`). Key rules: `#f5f5f5` canvas, `#ffffff` cards, `1px #202020` borders (no shadows), `8px` radius on all components. The `## LinkGoes Component Map` section in `DESIGN.md` maps design tokens directly to this app's specific components (sidebar, stat cards, link table, charts, forms).
 
 ---
 
@@ -38,7 +38,7 @@ All UI agents must follow `DESIGN.md` — a monochrome engineering aesthetic wit
 | Monitoring | PostHog (free tier) |
 | Testing | Vitest (unit + integration) + Playwright (E2E) |
 | Package manager | pnpm |
-| Deployment | Vercel Hobby — `prod` branch → `linkto.vercel.app` |
+| Deployment | Vercel Hobby — `prod` branch → `linkgoes.vercel.app` |
 | CI/CD | GitHub Actions (lint/typecheck/tests) + Vercel auto-deploy |
 
 ---

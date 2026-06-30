@@ -93,7 +93,7 @@ export default function NewLinkPage() {
               Custom slug <span className="text-[#333333] font-normal">(optional)</span>
             </label>
             <div className="flex items-center gap-0">
-              <span className="px-3 py-2 text-sm text-[#333333] bg-[#f5f5f5] border border-r-0 border-[#202020] rounded-l-[8px] whitespace-nowrap">linkto.app/</span>
+              <span className="px-3 py-2 text-sm text-[#333333] bg-[#f5f5f5] border border-r-0 border-[#202020] rounded-l-[8px] whitespace-nowrap">linkgoes.vercel.app/</span>
               <input
                 type="text"
                 value={customSlug}

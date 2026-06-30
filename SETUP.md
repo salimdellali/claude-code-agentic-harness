@@ -21,7 +21,7 @@ Verify: `pnpm --version` should return a version number.
 ## 1. Database — Neon (PostgreSQL)
 
 1. Go to [neon.tech](https://neon.tech) → create a free account
-2. Create a new project named `linkto`, pick the region closest to you
+2. Create a new project named `linkgoes`, pick the region closest to you
 3. Copy the connection string from the dashboard (looks like `postgresql://user:pass@host/dbname?sslmode=require`)
 4. Save it — you'll need it in step 4
 
@@ -32,7 +32,7 @@ Verify: `pnpm --version` should return a version number.
 ## 2. Auth — Clerk
 
 1. Go to [clerk.com](https://clerk.com) → create a free account
-2. Create a new application named `linkto` → choose "Email" + "Google" as sign-in methods
+2. Create a new application named `linkgoes` → choose "Email" + "Google" as sign-in methods
 3. From the Clerk dashboard → API Keys, copy:
    - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
    - `CLERK_SECRET_KEY`
@@ -42,7 +42,7 @@ Verify: `pnpm --version` should return a version number.
 ## 3. PostHog — Analytics
 
 1. Go to [posthog.com](https://posthog.com) → create a free account
-2. Create a new project named `linkto`
+2. Create a new project named `linkgoes`
 3. From Project Settings → Project API Key, copy:
    - `NEXT_PUBLIC_POSTHOG_KEY` (starts with `phc_`)
 4. Note your host — default is `https://app.posthog.com`
@@ -75,11 +75,11 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 ## 5. GitHub — Create Repo
 
-1. Create a new repo at github.com named `linkto`
+1. Create a new repo at github.com named `linkgoes`
 2. After agents finish Phase 1 scaffolding, push and create branches:
    ```bash
    git init
-   git remote add origin https://github.com/YOUR_USERNAME/linkto.git
+   git remote add origin https://github.com/YOUR_USERNAME/linkgoes.git
    git add .
    git commit -m "chore: initial scaffold"
    git push -u origin main
@@ -92,11 +92,11 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 ## 6. Vercel — Link & Configure
 
 1. Go to [vercel.com](https://vercel.com) → Add New Project → import the GitHub repo from step 5
-2. Set the project name to `linkto` (this claims `linkto.vercel.app`)
+2. Set the project name to `linkgoes` (this claims `linkgoes.vercel.app`)
 3. In Project Settings → Git → configure:
-   - `prod` branch → Production deployment (maps to `linkto.vercel.app`)
+   - `prod` branch → Production deployment (maps to `linkgoes.vercel.app`)
    - `staging` branch → Preview deployment
-4. In Project Settings → Environment Variables, add all vars from step 4 (use `linkto.vercel.app` for `NEXT_PUBLIC_APP_URL` in Production)
+4. In Project Settings → Environment Variables, add all vars from step 4 (use `linkgoes.vercel.app` for `NEXT_PUBLIC_APP_URL` in Production)
 
 ---
 
@@ -131,6 +131,6 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 **While agents run Phase 1–2:**
 - [ ] PostHog account created, key copied, added to `.env.local`
-- [ ] GitHub repo created (`linkto`), `staging` and `prod` branches pushed
-- [ ] Vercel project linked, `prod` branch mapped to `linkto.vercel.app`
+- [ ] GitHub repo created (`linkgoes`), `staging` and `prod` branches pushed
+- [ ] Vercel project linked, `prod` branch mapped to `linkgoes.vercel.app`
 - [ ] Env vars added in Vercel dashboard
